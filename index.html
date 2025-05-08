@@ -99,32 +99,93 @@
               </div>
             </div>
           </div>
-         <ul class="project-list">
-  <li class="project-item" style="background-image: url('images/h2.png')">
-    <div class="overlay">
-      <div class="icon-text">
-        <img src="icons/build.png" alt="Build Icon" />
-        <span>Structural & Civil Construction</span>
+        <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #1a1a1a;
+    }
+
+    .project-list {
+      list-style: none;
+      margin: 20px;
+      padding: 0;
+    }
+
+    .project-item {
+      display: flex;
+      align-items: center;
+      background-size: cover;
+      background-position: center right;
+      height: 180px;
+      margin-bottom: 15px;
+      position: relative;
+      border-radius: 6px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .overlay {
+      background-color: #003366; /* Blue section */
+      width: 35%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+    }
+
+    .icon-text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .icon-text img {
+      width: 40px;
+      margin-bottom: 10px;
+    }
+
+    .icon-text span {
+      font-size: 16px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <ul class="project-list">
+    <li class="project-item" style="background-image: url('images/h2.png')">
+      <div class="overlay">
+        <div class="icon-text">
+          <img src="icons/build.png" alt="Build Icon" />
+          <span>Structural & Civil Construction</span>
+        </div>
       </div>
-    </div>
-  </li>
-  <li class="project-item" style="background-image: url('images/h1.png')">
-    <div class="overlay">
-      <div class="icon-text">
-        <img src="icons/design.png" alt="Design Icon" />
-        <span>Design/ Engineering</span>
+    </li>
+    <li class="project-item" style="background-image: url('images/h1.png')">
+      <div class="overlay">
+        <div class="icon-text">
+          <img src="icons/design.png" alt="Design Icon" />
+          <span>Design/ Engineering</span>
+        </div>
       </div>
-    </div>
-  </li>
-  <li class="project-item" style="background-image: url('images/h3.png')">
-    <div class="overlay">
-      <div class="icon-text">
-        <img src="icons/supply.png" alt="Supply Icon" />
-        <span>Supply</span>
+    </li>
+    <li class="project-item" style="background-image: url('images/h3.png')">
+      <div class="overlay">
+        <div class="icon-text">
+          <img src="icons/supply.png" alt="Supply Icon" />
+          <span>Supply</span>
+        </div>
       </div>
-    </div>
-  </li>
-</ul>
+    </li>
+  </ul>
 
          
         </section>
