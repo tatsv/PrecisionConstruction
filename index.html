@@ -99,103 +99,88 @@
               </div>
             </div>
           </div>
-       <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
+     <style>
     body {
+      margin: 0;
       font-family: Arial, sans-serif;
-      background-color: #1a1a1a;
-      padding: 30px;
+      background: #1a1a1a;
     }
 
     .project-list {
       list-style: none;
       padding: 0;
+      margin: 30px;
     }
 
     .project-item {
       display: flex;
       align-items: center;
-      height: 180px;
-      margin-bottom: 20px;
       background-size: cover;
-      background-position: center right;
-      border-radius: 8px;
+      background-position: center;
+      height: 80px;
+      margin-bottom: 15px;
+      position: relative;
       overflow: hidden;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
     }
 
     .overlay {
-      background-color: #003366;
-      width: 35%;
+      background-color: rgba(0, 57, 128, 0.9); /* Blue background with opacity */
       height: 100%;
+      width: 320px;
       display: flex;
-      justify-content: center;
       align-items: center;
-      padding: 15px;
-      color: white;
+      padding-left: 15px;
     }
 
     .icon-text {
-      text-align: center;
+      display: flex;
+      align-items: center;
+      color: #fff;
+      gap: 12px;
+      font-size: 16px;
+      font-weight: bold;
     }
 
     .icon-text img {
-      width: 50px;
-      height: auto;
-      margin-bottom: 10px;
-    }
-
-    .icon-text span {
-      font-size: 16px;
-      font-weight: 600;
+      height: 28px;
+      width: 28px;
+      filter: brightness(0) invert(1); /* Make icons white on dark background */
     }
   </style>
 </head>
 <body>
 
- <ul class="project-list">
-  <!-- Moved Design/Engineering to Top -->
-  <li class="project-item" style="background-image: url('images/h2.png')">
-    <div class="overlay">
-      <div class="icon-text">
-        <img src="icons/design.png" alt="Design Icon" />
-        <span>Design/ Engineering</span>
+  <ul class="project-list">
+    <!-- Design/Engineering -->
+    <li class="project-item" style="background-image: url('https://images.unsplash.com/photo-1529421308132-7b72aaebfefe?auto=format&fit=crop&w=800&q=80')">
+      <div class="overlay">
+        <div class="icon-text">
+          <img src="https://img.icons8.com/ios-filled/50/blueprint.png" alt="Design Icon" />
+          <span>Design / Engineering</span>
+        </div>
       </div>
-    </div>
-  </li>
+    </li>
 
-  <!-- Moved Structural to Middle -->
-  <li class="project-item" style="background-image: url('images/h1.png')">
-    <div class="overlay">
-      <div class="icon-text">
-        <img src="icons/build.png" alt="Build Icon" />
-        <span>Structural & Civil Construction</span>
+    <!-- Structural & Civil Construction -->
+    <li class="project-item" style="background-image: url('https://images.unsplash.com/photo-1564149504294-7f50d53ffb8b?auto=format&fit=crop&w=800&q=80')">
+      <div class="overlay">
+        <div class="icon-text">
+          <img src="https://img.icons8.com/ios-filled/50/construction.png" alt="Build Icon" />
+          <span>Structural & Civil Construction</span>
+        </div>
       </div>
-    </div>
-  </li>
-  <li class="project-item" style="background-image: url('images/h2.png')">
-    <div class="overlay">
-      <div class="icon-text">
-        <img src="icons/design.png" alt="Design Icon" />
-        <span>Design/ Engineering</span>
+    </li>
+
+    <!-- Supply -->
+    <li class="project-item" style="background-image: url('https://images.unsplash.com/photo-1581090700227-1e7e7c88b1f1?auto=format&fit=crop&w=800&q=80')">
+      <div class="overlay">
+        <div class="icon-text">
+          <img src="https://img.icons8.com/ios-filled/50/delivery.png" alt="Supply Icon" />
+          <span>Supply</span>
+        </div>
       </div>
-    </div>
-  </li>
-  <!-- Kept Supply at Bottom -->
-  <li class="project-item" style="background-image: url('images/h3.png')">
-    <div class="overlay">
-      <div class="icon-text">
-        <img src="icons/supply.png" alt="Supply Icon" />
-        <span>Supply</span>
-      </div>
-    </div>
-  </li>
-</ul>
+    </li>
+  </ul>
 
 
 
