@@ -100,51 +100,63 @@
             </div>
           </div>
  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #1a1a1a url('https://www.transparenttextures.com/patterns/dark-mosaic.png');
-      background-size: cover;
-    }
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #1a1a1a url('https://www.transparenttextures.com/patterns/dark-mosaic.png');
+    background-size: cover;
+  }
 
-    .project-list {
-      list-style: none;
-      padding: 40px;
-      margin: 0;
-    }
+  .project-list {
+    list-style: none;
+    padding: 40px;
+    margin: 0;
+  }
 
-    .project-item {
-      background-size: cover;
-      background-position: center;
-      height: 140px;
-      margin-bottom: 20px;
-      position: relative;
-      border-radius: 8px;
-      overflow: hidden;
-    }
+  .project-item {
+    background-size: cover;
+    background-position: center;
+    height: 140px;
+    margin-bottom: 20px;
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5), 0 6px 6px rgba(0,0,0,0.3);
+    transform: perspective(1000px) rotateX(0deg) rotateY(0deg);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+  }
 
-    .overlay {
-      background-color: rgba(0, 57, 128, 0.85);
-      height: 100%;
-      display: flex;
-      align-items: center;
-      padding: 0 20px;
-    }
+  .project-item:hover {
+    transform: perspective(1000px) rotateX(3deg) rotateY(-3deg);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.6), 0 10px 10px rgba(0,0,0,0.4);
+  }
 
-    .icon-text {
-      display: flex;
-      align-items: center;
-      color: #fff;
-      font-size: 20px;
-      font-weight: bold;
-      gap: 16px;
-    }
+  .overlay {
+    background-color: rgba(0, 57, 128, 0.85);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+  }
 
-    .icon-text img {
-      height: 50px;
-      width: 50px;
-    }
-  </style>
+  .icon-text {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    gap: 16px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+  }
+
+  .icon-text img {
+    height: 50px;
+    width: 50px;
+    filter: drop-shadow(1px 1px 2px black);
+    transform: translateZ(10px);
+  }
+</style>
+
 </head>
 <body>
 
